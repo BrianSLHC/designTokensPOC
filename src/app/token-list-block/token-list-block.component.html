@@ -1,0 +1,8 @@
+<h1 class="token-list-block__name">{{tokenListBlock.name}}</h1>
+<div *ngFor="let token of tokenListBlock.tokens; index as i" class="token-list-block__token">
+  <div class="token-list-block__token-number">{{token.number}}</div>
+  <div class="token-list-block__token-info">
+    <div class="token-list-block__token-name">{{token.name}}</div>
+    <div class="token-list-block__token-prop">{{token.value}}</div>
+  </div>
+</div>

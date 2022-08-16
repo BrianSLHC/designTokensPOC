@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="header">
+    <div class="header__title">Design Tokens Applied :: Proof of Concept</div>
+    <div class="header__dropdown">
+      <select class="select" #componentSelectCtrl>
+        <option value="shv-input-text">shv-input-text</option>
+      </select>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content__col">
+      <h2 class="subtitle">Tokens in use:</h2>
+      <app-token-list-block *ngFor="let tokenListBlock of tokenListBlocks" [tokenListBlock]="tokenListBlock"
+        class="token-list-block"></app-token-list-block>
+    </div>
+    <div class="content__col content__col_w_full">
+      <div class="content__col-top">
+        <img class="diagram" src="../assets/images/diagrams/shv-input-text.svg" alt="diagram">
+        <shv-form-field class="form-field" #formField>
+          <shv-input-text class="input-text"></shv-input-text>
+        </shv-form-field>
+      </div>
+      <div class="content__col-bottom">
+        <div class="checkbox-row">
+          <form class="form" [formGroup]="componentStateForm">
+            <div class="form__radio-group">
+              <input type="radio" value="readwrite" formControlName="componentState" id="readwrite"
+                class="form__radio-input">
+              <label for="readwrite" class="form__radio-label">
+                <span class="form__radio-button"></span>
+                <span class="form__radio-text">Read Write</span>
+              </label>
+            </div>
+            <div class="form__radio-group">
+              <input type="radio" value="readonly" formControlName="componentState" id="readonly"
+                class="form__radio-input">
+              <label for="readonly" class="form__radio-label">
+                <span class="form__radio-button"></span>
+                <span class="form__radio-text">Read Only</span>
+              </label>
+            </div>
+            <div class="form__radio-group">
+              <input type="radio" value="disabled" formControlName="componentState" id="disabled"
+                class="form__radio-input">
+              <label for="disabled" class="form__radio-label">
+                <span class="form__radio-button"></span>
+                <span class="form__radio-text">Disabled</span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <figure class="code-block" [innerHTML]="markupCode">
+
+        </figure>
+
+      </div>
+    </div>
+    <div class="content__col">
+      <h2 class="subtitle">CSS rules:</h2>
+      <figure class="code-block" [innerHTML]="cssCode">
+
+      </figure>
+    </div>
+  </div>
+</div>

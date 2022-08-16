@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="451.122" height="119.212" viewBox="0 0 451.122 119.212">
+  <g id="figure" transform="translate(-438.679 -334.028)">
+    <rect id="Rectangle_23" data-name="Rectangle 23" width="39.634" height="16.225" transform="translate(439.799 381.517)" fill="#22716f"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" width="39.634" height="7.641" transform="translate(439.799 397.599)" fill="#ea6734"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="438" height="36" transform="translate(445.801 411.24)" fill="#22716f"/>
+    <path id="Path_21" data-name="Path 21" d="M450.8,107.213H24.8v-24h426Zm8-36H16.8a4.012,4.012,0,0,0-4,4v40a4.012,4.012,0,0,0,4,4h442a4.012,4.012,0,0,0,4-4v-40a4.012,4.012,0,0,0-4-4" transform="translate(427 334.027)" fill="#ea6734"/>
+    <path id="Path_22" data-name="Path 22" d="M458.8,74.213a1.013,1.013,0,0,1,1,1v40a1.013,1.013,0,0,1-1,1H16.8a1.013,1.013,0,0,1-1-1v-40a1.013,1.013,0,0,1,1-1Zm0-3H16.8a4.012,4.012,0,0,0-4,4v40a4.012,4.012,0,0,0,4,4h442a4.012,4.012,0,0,0,4-4v-40a4.012,4.012,0,0,0-4-4" transform="translate(427 334.027)" fill="#9064b3"/>
+    <text id="Label" transform="translate(438.679 395.742)" fill="#26193c" font-size="19" font-family="Calibre-Semibold, Calibre" font-weight="600"><tspan x="0" y="0">La</tspan><tspan y="0" letter-spacing="0.004em">b</tspan><tspan y="0">el</tspan></text>
+    <path id="Path_23" data-name="Path 23" d="M54.11,20.232A20.232,20.232,0,1,1,33.879,0,20.231,20.231,0,0,1,54.11,20.232" transform="translate(427 334.027)" fill="#22716f"/>
+    <text id="_2" data-name="2" transform="translate(455.917 359.712)" fill="#fff" font-size="18" font-family="Calibre-Regular, Calibre"><tspan x="0" y="0">2</tspan></text>
+    <path id="Path_24" data-name="Path 24" d="M100.355,20.232A20.232,20.232,0,1,1,80.124,0a20.231,20.231,0,0,1,20.231,20.231" transform="translate(427 334.027)" fill="#ea6734"/>
+    <text id="_8" data-name="8" transform="translate(502.74 359.712)" fill="#fff" font-size="18" font-family="Calibre-Regular, Calibre"><tspan x="0" y="0">8</tspan></text>
+    <path id="Line_1" data-name="Line 1" d="M1,46.868H-1V0H1Z" transform="translate(645.858 358.71)" fill="#9064b3"/>
+    <path id="Path_25" data-name="Path 25" d="M219.108,0a20.232,20.232,0,0,0,0,40.463h.431a20.232,20.232,0,0,0,0-40.463Z" transform="translate(427 334.027)" fill="#9064b3"/>
+    <text id="_5_6" data-name="5, 6" transform="translate(633.647 359.712)" fill="#fff" font-size="18" font-family="Calibre-Regular, Calibre"><tspan x="0" y="0" letter-spacing="-0.007em">5</tspan><tspan y="0">, 6</tspan></text>
+    <path id="Line_2" data-name="Line 2" d="M1,19.257H-1V0H1Z" transform="translate(460.878 362.372)" fill="#22716f"/>
+    <path id="Path_26" data-name="Path 26" d="M192.844,20.232A20.231,20.231,0,1,1,172.613,0a20.231,20.231,0,0,1,20.231,20.231" transform="translate(427 334.027)" fill="#22716f"/>
+    <text id="_1_4" data-name="1, 4" transform="translate(588.653 359.712)" fill="#fff" font-size="18" font-family="Calibre-Regular, Calibre"><tspan x="0" y="0">1, 4</tspan></text>
+    <path id="Line_3" data-name="Line 3" d="M1,58.227H-1V0H1Z" transform="translate(599.613 360.49)" fill="#22716f"/>
+    <path id="Path_27" data-name="Path 27" d="M82.117,68.573H45.539v-2H80.117V35.346h2Z" transform="translate(427 334.027)" fill="#ea6734"/>
+    <path id="Path_28" data-name="Path 28" d="M146.6,20.232A20.232,20.232,0,1,1,126.369,0,20.231,20.231,0,0,1,146.6,20.232" transform="translate(427 334.027)" fill="#ea6734"/>
+    <text id="_7" data-name="7" transform="translate(549.409 359.712)" fill="#fff" font-size="18" font-family="Calibre-Regular, Calibre"><tspan x="0" y="0">7</tspan></text>
+    <path id="Line_4" data-name="Line 4" d="M1,43.227H-1V0H1Z" transform="translate(553.368 367.49)" fill="#ea6734"/>
+    <text id="Some_Value" data-name="Some Value" transform="translate(451.776 435.754)" fill="#26193c" font-size="19" font-family="Calibre-Regular, Calibre"><tspan x="0" y="0" letter-spacing="0.005em">S</tspan><tspan y="0">ome </tspan><tspan y="0" letter-spacing="-0.047em">V</tspan><tspan y="0">alue</tspan></text>
+  </g>
+</svg>

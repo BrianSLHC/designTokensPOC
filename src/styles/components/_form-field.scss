@@ -1,0 +1,14 @@
+.form-field {
+  &__label {
+    @include vds-input-label;
+    &_clarifier {
+      @include vds-input-clarifier;
+    }
+    &_error {
+      color: 	var(--vds-color-prohibition);
+    }
+    &__input {
+
+    }
+  }
+}

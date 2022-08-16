@@ -1,0 +1,692 @@
+@charset "utf-8";
+
+/**
+ * Vitality Design Tokens
+ * Version 0.2
+ */
+
+:root {
+	/*
+	 * Colors
+	 */
+
+	/* Brand */
+
+	/* Primary */
+	--vds-brand-color-caring-purple: 	rgb(38,25,60); 	/* Caring Purple */
+	--vds-brand-color-proud-violet: 	rgb(67,25,97);		/* Proud Violet */
+	--vds-brand-color-precise-red: 		rgb(243,72,66); 	/* Precise Red */
+	--vds-brand-color-tech-grey: 		rgb(229,229,229); 	/* Tech Grey */
+
+	/* Secondary */
+	--vds-brand-color-blue: 			rgb(104,152,170); 	/* SLHC Blue */
+	--vds-brand-color-green: 			#22716f; 	/* SLHC Green */
+	--vds-brand-color-yellow: 			rgb(187,148,69); 	/* SLHC Yellow */
+
+	/* Tints and Shades */
+
+	/* Caring Purple */
+	--vds-brand-color-purple-100: rgb(13,0,30); 		/* SLHC Purple 1 */
+	--vds-brand-color-purple-200: rgb(14,0,35); 		/* SLHC Purple 2 */
+	--vds-brand-color-purple-300: rgb(23,9,45); 		/* SLHC Purple 3 */
+	--vds-brand-color-purple-400: rgb(26,15,49); 		/* SLHC Purple 4 */
+	--vds-brand-color-purple-500: rgb(54,42,78); 		/* SLHC Purple 5 */
+	--vds-brand-color-purple-600: rgb(79,64,103); 		/* SLHC Purple 6 */
+	--vds-brand-color-purple-700: rgb(102,87,128); 	/* SLHC Purple 7 */
+	--vds-brand-color-purple-800: rgb(153,138,181);	 /* SLHC Purple 8 */
+
+	/* Proud Violet */
+	--vds-brand-color-violet-100: rgb(31,5,50); 		/* SLHC Violet 1 */
+	--vds-brand-color-violet-200: rgb(40,5,61); 		/* SLHC Violet 2 */
+	--vds-brand-color-violet-300: rgb(45,5,76); 		/* SLHC Violet 3 */
+	--vds-brand-color-violet-400: rgb(49,26,82); 		/* SLHC Violet 4 */
+	--vds-brand-color-violet-500: rgb(93,53,126); 		/* SLHC Violet 5 */
+	--vds-brand-color-violet-600: rgb(106,64,138); 	/* SLHC Violet 6 */
+	--vds-brand-color-violet-700: #9064b3; 	/* SLHC Violet 7 */
+	--vds-brand-color-violet-800: rgb(225,204,237); 	/* SLHC Violet 8 */
+
+	/* Tech Grey */
+	--vds-brand-color-grey-100: rgb(41,41,41); 		/* SLHC Grey 1 */
+	--vds-brand-color-grey-200: rgb(63,63,63); 		/* SLHC Grey 2 */
+	--vds-brand-color-grey-300: rgb(105,105,105); 		/* SLHC Grey 3 */
+	--vds-brand-color-grey-400: rgb(146,146,146); 		/* SLHC Grey 4 */
+	--vds-brand-color-grey-500: rgb(188,188,188); 		/* SLHC Grey 5 */
+	--vds-brand-color-grey-600: rgb(233,233,233); 		/* SLHC Grey 6 */
+	--vds-brand-color-grey-700: rgb(247,247,247); 		/* SLHC Grey 7 */
+
+	/* Semantics */
+
+	/* Notifications */
+	--vds-color-okay:			var(--vds-brand-color-green);
+	--vds-color-information:	var(--vds-brand-color-blue);
+	--vds-color-important:		var(--vds-brand-color-violet-500);
+	--vds-color-caution:		var(--vds-brand-color-yellow);
+	--vds-color-warning:		#ea6734;
+	--vds-color-urgent:			var(--vds-brand-color-precise-red);
+	--vds-color-danger:			#ff1b42;
+
+	/* Rules */
+	--vds-color-obligation:		var(--vds-brand-color-violet-500);
+	--vds-color-prohibition:	var(--vds-brand-color-precise-red);
+
+	/* Neutrals */
+	--vds-color-neutral-1:		var(--vds-brand-color-caring-purple);
+	--vds-color-neutral-2:		var(--vds-brand-color-grey-400);
+	--vds-color-neutral-3:		var(--vds-brand-color-blue);
+
+	/* Specials */
+	--vds-color-jade:			#269995;
+	--vds-color-sunflower:		#e6de4a;
+	--vds-color-goldenrod:		#e6b24a;
+	--vds-color-orchid:			#9771d9;
+	--vds-color-crimson:		#e1150e;
+	--vds-color-scarlet:		#bf100a;
+
+	/* Text Selection */
+	--vds-color-text-selection:	var(--vds-brand-color-violet-800); /* Apply to ::selection */
+
+	/*
+	 * Data Visualization
+	 */
+
+	/* later... */
+
+	/*
+	 * Icons
+	 */
+
+	/* Size */
+	--vds-icon-size-sm:	2.8rem 2.8rem;
+	--vds-icon-size-l:	6rem 6rem;
+	--vds-icon-size-xl:	8.4rem 8.4rem;
+
+	/* Colors */
+
+	/* Notifications */
+	--vds-icon-fill-color-okay:			var(--vds-color-okay);
+	--vds-icon-fill-color-information:	var(--vds-color-information);
+	--vds-icon-fill-color-important:	var(--vds-color-important);
+	--vds-icon-fill-color-caution:		var(--vds-color-caution);
+	--vds-icon-fill-color-warning:		var(--vds-color-warning);
+	--vds-icon-fill-color-urgent:		var(--vds-color-urgent);
+	--vds-icon-fill-color-danger:		var(--vds-color-danger);
+
+	/* Rules */
+	--vds-icon-fill-color-obligation:	var(--vds-color-obligation);
+	--vds-icon-fill-color-prohibition:	var(--vds-color-prohibition);
+
+	/* Neutral */
+	--vds-icon-fill-color-neutral-1:	var(--vds-color-neutral-1);
+	--vds-icon-fill-color-neutral-2:	var(--vds-color-neutral-2);
+	--vds-icon-fill-color-neutral-3:	var(--vds-color-neutral-3);
+	/*
+	 * Fonts
+	 */
+
+	/* Families */
+	--vds-font-family-normal:			Calibre-Regular, Arial, sans-serif;
+	--vds-font-family-italic:			Calibre-Regular-Italic, Arial, sans-serif;
+	--vds-font-family-medium:			Calibre-Medium, Arial, sans-serif;
+	--vds-font-family-medium-italic:	Calibre-Medium-Italic, Arial, sans-serif;
+	--vds-font-family-semibold:			Calibre-Semibold, Arial, sans-serif;
+	--vds-font-family-semibold-italic:	Calibre-Semibold-Italic, Arial, sans-serif;
+
+	/* Sizes */
+	--vds-font-size-base:				10px;
+	--vds-font-size-xs:					1.3rem;
+	--vds-font-size-sm:					1.6rem;
+	--vds-font-size-md:					2rem;
+	--vds-font-size-lg:					2.4rem;
+
+	/* Weights */
+	--vds-font-weight-normal:			400;
+	--vds-font-weight-medium:			500;
+	--vds-font-weight-semibold:			600;
+
+	/* Variants */
+	--vds-font-variant-normal:			normal;
+	--vds-font-variant-numeric:			tabular-nums;
+
+	/* Line Heights */
+	--vds-font-line-height-base:		1;
+	--vds-font-line-height-sm:			120%;
+	--vds-font-line-height-md:			140%;
+	--vds-font-line-height-lg:			150%;
+
+    /* Default Font */
+    --vds-font-family-default:          var(--vds-font-family-normal);
+    --vds-font-style-default:           normal;
+    --vds-font-variant-default:         var(--vds-font-variant-normal);
+    --vds-font-variant-numeric-default: var(--vds-font-variant-numeric);
+    --vds-font-weight-default:          var(--vds-font-weight-normal);
+
+    /* Pronounced Font */
+    --vds-font-family-pronounced:			var(--vds-font-family-normal);
+    --vds-font-style-pronounced:			italic;
+    --vds-font-variant-pronounced:			var(--vds-font-variant-normal);
+    --vds-font-variant-numeric-pronounced:	var(--vds-font-variant-numeric);
+    --vds-font-weight-pronounced:			var(--vds-font-weight-normal);
+
+	/* Strong Font */
+    --vds-font-family-strong:				var(--vds-font-family-semibold);
+    --vds-font-style-strong:				normal;
+    --vds-font-variant-strong:				var(--vds-font-variant-normal);
+    --vds-font-variant-numeric-strong:		var(--vds-font-variant-numeric);
+    --vds-font-weight-strong:				var(--vds-font-weight-semibold);
+
+	/* Powerful Font */
+    --vds-font-family-powerful:				var(--vds-font-family-semibold);
+    --vds-font-style-powerful:				italic;
+    --vds-font-variant-powerful:			var(--vds-font-variant-normal);
+    --vds-font-variant-numeric-powerful:	var(--vds-font-variant-numeric);
+    --vds-font-weight-powerful:				var(--vds-font-weight-semibold);
+
+	/*
+	 * Text
+	 */
+
+	/* Colors */
+
+	/* Default */
+	--vds-text-color-default:				var(--vds-brand-color-caring-purple);
+
+	/* Levels of Urgency */
+
+	/* later... */
+
+	/*
+	 * Body
+	 */
+
+	/* Small - The default size */
+	--vds-body-text-color-sm:					var(--vds-text-color-default);
+	/*--vds-body-text-font-sm: 			var(--vds-font-default);*/
+	/*
+	--vds-body-text-font-family-sm:				var(--vds-font-family-default);
+    --vds-body-text-font-style-sm:				var(--vds-font-style-default);
+    --vds-body-text-font-variant-sm:			var(--vds-font-variant-default);
+    --vds-body-text-font-variant-numeric-sm:	var(--vds-font-variant-numeric-default);
+    --vds-body-text-font-weight-sm:				var(--vds-font-weight-default);
+	*/
+	--vds-body-text-line-height-sm: 			var(--vds-font-line-height-sm);
+	--vds-body-text-size-sm: 					var(--vds-font-size-sm);
+
+	/*
+	 * Medium
+	 */
+	--vds-body-text-color-md:					var(--vds-text-color-default);
+	--vds-body-text-line-height-md: 			var(--vds-font-line-height-sm);
+	--vds-body-text-size-md: 					var(--vds-font-size-md);
+
+	/*
+	 * Large
+	 */
+	 --vds-body-text-color-lg:					var(--vds-text-color-default);
+	 --vds-body-text-line-height-lg: 			var(--vds-font-line-height-sm);
+	 --vds-body-text-size-lg: 					var(--vds-font-size-lg);
+
+	 /*
+	 * Space
+	 */
+	--vds-space-eighth-x:				0.4rem;
+	--vds-space-quarter-x:				0.6rem;
+	--vds-space-third-x:				0.8rem;
+	--vds-space-half-x:					1.2rem;
+	--vds-space-three-quarter-x:		1.8rem;
+	--vds-space-one-x:					2.4rem; /* Used for most spacing */
+	--vds-space-one-and-a-half-x:		3.6rem;
+	--vds-space-two-x:					4.8rem;
+
+	/*
+	 * Insets
+	 */
+
+	/* Note: unclear whether these are needed or useful in lieu of the Space tokens, above */
+
+	--vds-inset-quarter-x:				var(--vds-space-quarter-x) var(--vds-space-quarter-x);
+	--vds-inset-half-x:					var(--vds-space-half-x) var(--vds-space-half-x);				/* Buttons */
+	--vds-inset-half-x-one-x:			var(--vds-space-half-x) var(--vds-space-one-x);					/* Page menu bars */
+	--vds-inset-three-quarter-x-half-x:	var(--vds-space-three-quarter-x) var(--vds-space-half-x);		/* Table cells and table action buttons */
+	--vds-inset-one-x:					var(--vds-space-one-x) var(--vds-space-one-x);					/* Page headers, page content, modal title bars,
+																										   modal title close buttons, popovers, popover close buttons */
+	--vds-inset-one-x-half-x:			var(--vds-space-one-x) var(--vds-space-half-x);
+	--vds-inset-one-and-a-half-x:		var(--vds-space-one-and-a-half-x) var(--vds-space-one-and-a-half-x);
+	--vds-inset-two-x:					var(--vds-space-two-x) var(--vds-space-two-x);
+
+	/*
+	 * Radii
+	 */
+	--vds-radius-sharp:					0;
+	--vds-radius-soft:					var(--vds-space-eighth-x); /* Used for most components */
+	--vds-radius-smooth:				var(--vds-space-third-x);
+	--vds-radius-capsule:				99999px;
+	--vds-radius-round:					50%;
+
+	/*
+	 * Opacities
+	 */
+	--vds-reveal-opacity-exposed:		100%;	/* Default */
+	--vds-reveal-opacity-attenuated:	70%;	/* Text entry hints, prefixes, suffixes */
+	--vds-reveal-opacity-diminished:	30%;	/* Disabled elements, text that represents a non-applicable or immaterial condition */
+	--vds-conceal-opacity-solid:		100%;
+	--vds-conceal-opacity-heavy:		50%;	/* Modal scrims */
+	--vds-conceal-opacity-medium:		30%;	/* Drawer scrims */
+
+	/*
+	 * Shadows
+	 */
+
+	/* Surface */
+
+	/* Light Elements */
+	--vds-surface-shadow-bright-on-light:	0 0 0.4rem 0 rgba(0, 0, 0, 0.2);	/* Menu items in the hover state */
+	--vds-surface-shadow-light-on-light:	0 0 0.5rem 0 rgba(0, 0, 0, 0.2);	/* For example, dropdown lists or text entry fields inside tables */
+	--vds-surface-shadow-light-on-medium:	0 0 0.4rem 0 rgba(0, 0, 0, 0.18);	/* Most components, for example, tables, form fields, buttons */
+	--vds-surface-shadow-light-on-dark:		0 0 0.3rem 0 rgba(0, 0, 0, 0.5);
+
+	/* Medium Elements */
+	--vds-surface-shadow-medium-on-light:	0 0 0.3rem 0 rgba(0, 0, 0, 0.3);
+	--vds-surface-shadow-medium-on-medium:	0 0 0.4rem 0 rgba(0, 0, 0, 0.25);
+	--vds-surface-shadow-medium-on-dark:	0 0 0.3rem 0 rgba(0, 0, 0, 0.5);
+
+	/* Dark Elements */
+	--vds-surface-shadow-dark-on-light:		0 0 0.4rem 0 rgba(0, 0, 0, 0.5);
+	--vds-surface-shadow-dark-on-medium:	0 0 0.4rem 0 rgba(0, 0, 0, 0.5);
+	--vds-surface-shadow-dark-on-dark:		0 0 0.4rem 0 rgba(0, 0, 0, 0.4);
+
+	/* Floating */
+
+	/* Light Elements */
+	--vds-floating-shadow-light-on-light:	0 0 1rem 0 rgba(0, 0, 0, 0.3);		/* Light components floating above pages, but are not displayed
+																				    on a scrim, such as toasts and tooltips */
+	--vds-floating-shadow-light-on-medium:	0 0 1rem 0 rgba(0, 0, 0, 0.3);
+	--vds-floating-shadow-light-on-dark:	0 0 1rem 0 rgba(0, 0, 0, 0.5);
+
+	/* Medium Elements */
+	--vds-floating-shadow-medium-on-light:	0 0 1rem 0 rgba(0, 0, 0, 0.4);
+	--vds-floating-shadow-medium-on-medium:	0 0 1rem 0 rgba(0, 0, 0, 0.4);
+	--vds-floating-shadow-medium-on-dark:	0 0 1rem 0 rgba(0, 0, 0, 0.5);		/* Components that float above scrims such as modals and drawers.
+																				    Also, toast when they are displayed over a scrim. */
+
+	/* Dark Elements */
+	--vds-floating-shadow-dark-on-light:	0 0 1rem 0 rgba(0, 0, 0, 0.7);
+	--vds-floating-shadow-dark-on-medium:	0 0 1rem 0 rgba(0, 0, 0, 0.7);
+	--vds-floating-shadow-dark-on-dark:		0 0 1rem 0 rgba(0, 0, 0, 0.7);
+
+	/*
+	 * Dividers
+	 */
+
+	/* On Light */
+	--vds-divider-border-color-on-light:	var(--vds-brand-color-tech-grey);
+	--vds-divider-border-width-on-light: 	0.2rem;
+	--vds-divider-border-style-on-light: 	solid;
+
+	/* On Medium */
+	--vds-divider-border-color-on-medium:	var(--vds-brand-color-grey-500);
+	--vds-divider-border-width-on-medium: 	0.2rem;
+	--vds-divider-border-style-on-medium: 	solid;
+
+	/* On Medium Light */
+	--vds-divider-border-color-on-medium-light:		#dedede;
+	--vds-divider-border-width-on-medium-light: 	0.2rem;
+	--vds-divider-border-style-on-medium-light: 	solid;
+
+	/*
+	 * Elevations
+	 */
+	--vds-elevation-deep: 		-10000;		/* Elements that need to be hidden, if only temporarily. */
+	--vds-elevation-surface:	0;			/* Default elevation */
+	--vds-elevation-raised:		1000;		/* Spinners and badges */
+	--vds-elevation-elevated:	2000;		/* Dropdown menus, menu bar popup menus, stick table headers */
+	--vds-elevation-volitant:	3000;		/* Scrims */
+	--vds-elevation-floating:	5000;		/* Modals and drawers */
+	--vds-elevation-gliding:	6000;		/* Toasts */
+	--vds-elevation-soaring:	7000;		/* For future needs */
+	--vds-elevation-skyward:	10000;		/* Anything that must be above everything else on the page */
+}
+
+@mixin vds-font-default { /* The default font for all products. Include in the :root, html, or equivalent. */
+	font-family:					var(--vds-font-family-default);
+	font-style:						var(--vds-font-style-default);
+	font-variant:					var(--vds-font-variant-default);
+	font-variant-numeric:			var(--vds-font-variant-numeric-default);
+	font-weight:					var(--vds-font-weight-default);
+}
+
+@mixin vds-font-pronounced {
+	font-family:					var(--vds-font-family-pronounced);
+	font-style:						var(--vds-font-style-pronounced);
+	font-variant:					var(--vds-font-variant-pronounced);
+	font-variant-numeric:			var(--vds-font-variant-numeric-pronounced);
+	font-weight:					var(--vds-font-weight-pronounced);
+}
+
+@mixin vds-font-strong {
+	font-family:					var(--vds-font-family-strong);
+	font-style:						var(--vds-font-style-strong);
+	font-variant:					var(--vds-font-variant-strong);
+	font-variant-numeric:			var(--vds-font-variant-numeric-strong);
+	font-weight:					var(--vds-font-weight-strong);
+}
+
+@mixin vds-font-powerful {
+	font-family:					var(--vds-font-family-powerful);
+	font-style:						var(--vds-font-style-powerful);
+	font-variant:					var(--vds-font-variant-powerful);
+	font-variant-numeric:			var(--vds-font-variant-numeric-powerful);
+	font-weight:					var(--vds-font-weight-powerful);
+}
+
+@mixin vds-body-text-sm {
+	@include vds-font-default;
+	color: 							var(--vds-body-text-color-sm);
+	font-size: 						var(--vds-body-text-size-sm);
+	line-height: 					var(--vds-body-text-line-height-sm);
+}
+
+@mixin vds-body-text-md {
+	@include vds-font-default;
+	color: 							var(--vds-body-text-color-md);
+	font-size: 						var(--vds-body-text-size-md);
+	line-height: 					var(--vds-body-text-line-height-md);
+}
+
+@mixin vds-body-text-lg {
+	@include vds-font-default;
+	color: 							var(--vds-body-text-color-lg);
+	font-size: 						var(--vds-body-text-size-lg);
+	line-height: 					var(--vds-body-text-line-height-lg);
+}
+
+/* Paragraphs */
+
+/* later... */
+
+/* Headings */
+
+/* later... */
+
+/* Signifiers */
+
+/* later... */
+
+/*
+ * Components
+ */
+
+/* Input */
+
+/* Label */
+
+/* Default */
+@mixin vds-input-label {
+	@include vds-font-strong;
+	color: 	var(--vds-text-color-default);
+}
+
+/* Enabled */
+@mixin vds-input-label-enabled {
+	@include vds-input-label;
+}
+
+/* Enabled */
+@mixin vds-input-label-enabled {
+	@include vds-input-label;
+}
+
+/* Hover */
+@mixin vds-input-label-hover {
+	@include vds-input-label;
+	color: 	var(--vds-brand-color-precise-red);
+}
+
+/* Focus */
+@mixin vds-input-label-focus {
+	@include vds-input-label;
+}
+
+/* Read Only */
+@mixin vds-input-label-read-only {
+	@include vds-input-label;
+}
+
+/* Disabled */
+@mixin vds-input-label-disabled {
+	@include vds-input-label;
+	opacity: var(--vds-reveal-opacity-diminished);
+}
+
+/* Invalid */
+@mixin vds-input-label-invalid {
+	@include vds-input-label;
+	color: 	var(--vds-brand-color-precise-red);
+}
+
+/* Optional Indicator */
+
+/* Default */
+@mixin vds-input-optional-indicator {
+	@include vds-font-default;
+	color: 	var(--vds-text-color-default);
+}
+
+/* Enabled */
+@mixin vds-input-optional-indicator-enabled {
+	@include vds-input-optional-indicator;
+}
+
+/* Hover */
+@mixin vds-input-optional-indicator-hover {
+	@include vds-input-optional-indicator;
+	color: 	var(--vds-brand-color-precise-red);
+}
+
+/* Focus */
+@mixin vds-input-optional-indicator-focus {
+	@include vds-input-optional-indicator;
+}
+
+/* Read Only */
+@mixin vds-input-optional-indicator-read-only {
+	@include vds-input-optional-indicator;
+}
+
+/* Disabled */
+@mixin vds-input-optional-indicator-disabled {
+	@include vds-input-optional-indicator;
+	opacity: var(--vds-reveal-opacity-diminished);
+}
+
+/* Invalid */
+@mixin vds-input-optional-indicator-invalid {
+	@include vds-input-optional-indicator;
+	color: 	var(--vds-brand-color-precise-red);
+}
+
+/* Container */
+
+/* Default */
+@mixin vds-input-container {
+	@include vds-font-default;
+	background-color: 	var(--vds-brand-color-grey-700);
+	border-width: 		0;
+	border-radius: 		var(--vds-radius-soft);
+	box-shadow: 		var(--vds-surface-shadow-light-on-medium);
+	caret-color: 		var(--vds-brand-color-precise-red);
+	color: 				var(--vds-text-color-default);
+	opacity: 			var(--vds-reveal-opacity-exposed);
+	padding: 			var(--vds-space-half-x) var(--vds-space-third-x);
+	vertical-align: 	middle;
+}
+
+/* Hover */
+@mixin vds-input-container-hover {
+	@include vds-input-container;
+	border-color: 		var(--vds-brand-color-precise-red);
+	border-style: 		solid;
+	border-width: 		0 0 var(--vds-space-eighth-x) 0;
+	padding: 			var(--vds-space-half-x) var(--vds-space-third-x) var(--vds-space-third-x) var(--vds-space-third-x);
+}
+
+/* Focus */
+@mixin vds-input-container-focus {
+	@include vds-input-container;
+}
+
+/* Read Only */
+@mixin vds-input-container-read-only {
+	@include vds-input-container;
+	background-color: 	#ededed;
+	border-color: 		var(--vds-brand-color-grey-500);
+	border-style: 		solid;
+	border-width: 		0.1rem;
+	box-shadow: 		none;
+}
+
+/* Disabled */
+@mixin vds-input-container-disabled {
+	@include vds-input-container;
+	opacity: var(--vds-reveal-opacity-diminished);
+}
+
+/* Invalid */
+@mixin vds-input-container-invalid {
+	@include vds-input-container;
+	border-color: 	var(--vds-brand-color-precise-red);
+	border-style: 	solid;
+	border-width: 	var(--vds-space-eighth-x);
+	color: 			var(--vds-brand-color-precise-red);
+	padding: 		var(--vds-space-third-x) var(--vds-space-eighth-x);
+}
+
+/* Clarifier */
+
+/* Default */
+@mixin vds-input-clarifier {
+	@include vds-font-default;
+	color: 	var(--vds-text-color-default);
+}
+
+/* Enabled */
+@mixin vds-input-clarifier-enabled {
+	@include vds-input-clarifier;
+}
+
+/* Hover */
+@mixin vds-input-clarifier-hover {
+	@include vds-input-clarifier;
+	color:	var(--vds-brand-color-precise-red);
+}
+
+/* Focus */
+@mixin vds-input-clarifier-hover {
+	@include vds-input-clarifier;
+}
+
+/* Read Only */
+@mixin vds-input-clarifier-read-only {
+	@include vds-input-clarifier;
+}
+
+/* Disabled */
+@mixin vds-input-clarifier-disabled {
+	@include vds-input-clarifier;
+	opacity: var(--vds-reveal-opacity-diminished);
+}
+
+/* Invalid */
+@mixin vds-input-clarifier-invalid {
+	@include vds-input-clarifier;
+	color:			var(--vds-brand-color-precise-red);
+	font-family:	var(--vds-font-family-semibold);
+	font-weight:	var(--vds-font-weight-semibold);
+}
+
+/*
+ * Themes
+ */
+
+/* High Contast */
+
+@media (prefers-contrast: more) {
+	/* Could consider using this media tag for high contrast. However, I'm not sure how this media tag is set.
+	   I imagine it is a browser setting, which might even interrogate the operating system. I'd prefer that
+	   we control the setting specifically for our products though. More thought is required. */
+}
+
+html[data-theme="high-contrast"] { /* In code, when a user selects a Theme of High Contrast, simply set the custom tag "data-theme" to "high-contrast" on the <html> element. */
+	/* Label */
+
+	/* Default */
+	@mixin vds-high-contrast-input-label {
+		@include vds-input-label;
+	}
+
+	/* Invalid */
+	@mixin vds-high-contrast-input-label-invalid {
+		@include vds-high-contrast-input-label;
+		color: 	var(--vds-color-scarlet);
+	}
+
+	/* Optional Indicator */
+
+	/* Default */
+	@mixin vds-high-contrast-input-optional-indicator {
+		@include vds-input-optional-indicator;
+	}
+
+	/* Invalid */
+	@mixin vds-high-contrast-input-optional-indicator-invalid {
+		@include vds-high-contrast-input-optional-indicator;
+		color: 	var(--vds-color-scarlet);
+	}
+
+	/* Container */
+
+	/* Default */
+	@mixin vds-high-contast-input-container {
+		@include vds-input-container;
+		border-color: 		var(--vds-brand-color-grey-400);
+		border-width:		0.1rem;
+		font-family: 		var(--vds-font-family-medium);
+		font-weight: 		var(--vds-font-weight-medium);
+	}
+
+	@mixin vds-high-contrast-input-container-focus {
+		@include vds-high-contast-input-container;
+		border-color: 		var(--vds-brand-color-grey-400) var(--vds-brand-color-grey-400) var(--vds-color-scarlet) var(--vds-brand-color-grey-400);
+		border-width:		0.1rem 0.1rem var(--vds-space-eighth-x) 0.1rem;
+		padding: 			1.2rem var(--vds-space-third-x) var(--vds-space-third-x) var(--vds-space-third-x);
+	}
+
+	/* Read Only */
+	@mixin vd-high-contrast-input-container-read-only {
+		@include vds-high-contast-input-container;
+		background-color: 	#ededed;
+		box-shadow: 		none;
+	}
+
+	/* Invalid */
+	@mixin vds-high-contrast-input-container-invalid {
+		@include vds-input-container-invalid;
+		border-color: 	var(--vds-color-scarlet);
+		border-width: 	var(--vds-space-eighth-x);
+		color: 			var(--vds-color-scarlet);
+	}
+
+	/* Clarifier */
+
+	@mixin vds-high-contrast-input-clarifier {
+		@include vds-font-default;
+		color:			var(--vds-text-color-default);
+		font-family: 	var(--vds-font-family-medium);
+		font-weight: 	var(--vds-font-weight-medium);
+	}
+
+	/* Invalid */
+	@mixin vds-high-contrast-input-clarifier-invalid {
+		@include vds-high-contrast-input-clarifier;
+		color: 	var(--vds-color-scarlet);
+	}
+}
